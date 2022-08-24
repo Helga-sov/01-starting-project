@@ -1,5 +1,5 @@
 import Input from "../../UI/Input";
-import styles from "./MealItemFOrm.module.css";
+import styles from "./MealItemForm.module.css";
 
 const MealItemForm = (props) => {
 	return (
@@ -7,7 +7,7 @@ const MealItemForm = (props) => {
 			<Input
 				label="Amount"
 				input={{
-					id: "amount",
+					id: "amount_" + props.id,
 					type: "number",
 					min: "1",
 					max: "5",
